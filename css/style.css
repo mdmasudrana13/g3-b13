@@ -4,3 +4,137 @@
   font-optical-sizing: auto;
  
 }
+/* shared style */
+.flex{
+    display: flex;
+}
+.gray{
+    color: #424242;
+}
+.dark3{
+    color:#727272;
+    
+}
+.org{
+    color: #FF900E;
+}
+main{
+    max-width:1200px;
+    margin: 0 auto;
+}
+main > section {
+    margin-top: 130px;
+}
+header{
+    background-color: #fdd8ad;
+}
+.brand{
+    font-weight: 700;
+    font-size:3rem ;
+}
+.item{
+    list-style: none;
+    margin-right:30px ;
+}
+.link {
+   text-decoration: none;
+   font-weight: 500;
+
+}
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+}
+.baner{
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+.title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.btn1{
+    background-color: #FF900E;
+    color: #ffffff;
+    font-size: 2rem;
+    padding:20px 25px;
+    border:none ;
+    border-radius:8px ;
+    font-size: 1.25rem;
+}
+.banner img{
+  
+    width: 100%;
+}
+.teams {
+    align-items: center;
+
+}
+.con{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 24px;
+}
+.futer{
+    margin-left: 130px;
+    max-width:530px ;
+}
+#list{
+    font-weight: 500;
+}
+.futer-title {
+    font-size: 2.8rem;
+     font-weight: 800;
+    
+}
+.facts-con{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.fact{
+    border:1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+   
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fac-dec {
+    max-width: 540px;
+}
+@media screen and (max-width:576px) {
+    .nav-bar,
+     .manu, 
+     .teams {
+        flex-direction: column;
+    }
+    .con, .facts-con
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-con{
+        justify-items: center;
+        gap: 24px;
+    }
+    .futer{
+        margin-left: 20px;
+    }
+}
