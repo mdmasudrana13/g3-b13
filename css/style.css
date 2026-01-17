@@ -1,102 +1,177 @@
+.work-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
 
-.work-font{
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
- 
 }
+
 /* shared style */
-.flex{
+.flex {
     display: flex;
 }
-.gray{
+
+.gray {
     color: #424242;
 }
-.dark3{
-    color:#727272;
-    
-}
-.org{
-    color: #FF900E;
-}
-main{
-    max-width:1200px;
-    margin: 0 auto;
-}
-main > section {
-    margin-top: 130px;
-}
-header{
-    background-color: #fdd8ad;
-}
-.brand{
-    font-weight: 700;
-    font-size:3rem ;
-}
-.item{
-    list-style: none;
-    margin-right:30px ;
-}
-.link {
-   text-decoration: none;
-   font-weight: 500;
+
+.dark3 {
+    color: #727272;
 
 }
+
+.org {
+    color: #FF900E;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
+
+header {
+    background-color: #eee2d4;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
 .nav-bar {
     justify-content: space-between;
     align-items: center;
 }
-.baner{
+
+.baner {
     text-align: center;
     max-width: 850px;
     margin: 0 auto;
     margin-bottom: 50px;
 
 }
-.title{
+
+.title {
     font-weight: 700;
     font-size: 4rem;
 }
-.btn1{
+
+.btn1 {
     background-color: #FF900E;
     color: #ffffff;
     font-size: 2rem;
-    padding:20px 25px;
-    border:none ;
-    border-radius:8px ;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
     font-size: 1.25rem;
 }
-.banner img{
-  
+
+.banner img {
+
     width: 100%;
 }
+
 .teams {
     align-items: center;
 
 }
-.con{
- display: grid;
- grid-template-columns: repeat(2, 1fr);
- gap: 24px;
+
+.con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
-.futer{
+
+.futer {
     margin-left: 130px;
-    max-width:530px ;
+    max-width: 530px;
 }
-#list{
+
+#list {
     font-weight: 500;
 }
+
+.fet {
+    gap: 140px;
+}
+
 .futer-title {
     font-size: 2.8rem;
-     font-weight: 800;
-    
+    font-weight: 800;
+
 }
-.facts-con{
+
+#btn2 {
+
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+
+}
+
+.fet-hedding {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.fet-info {
+    margin-bottom: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgb(0, 0, 0, 0.06);
+    border-radius: 8px;
+
+}
+
+.feet-titile {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.feet-dec {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.facts-con {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
+
 }
-.fact{
-    border:1px solid #FF900E;
+
+.fet-img {
+    width: 100%;
+}
+
+#badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -77px;
+}
+
+#ex {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.fact {
+    border: 1px solid #FF900E;
     width: 240px;
     height: 240px;
     border-radius: 8px;
@@ -104,37 +179,97 @@ header{
     text-align: center;
     align-items: center;
 
-   
+
+
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.name{
+
+.name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 }
+
 .fac-dec {
     max-width: 540px;
 }
+
+/* factfinish */
+/* sponsor */
+.sponspors-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.spon-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #131313;
+}
+
+.spon-img {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.spon-img img {
+    filter: grayscale(100%);
+}
+
+ #foot{
+            max-width: 1444px;
+        
+            margin: 0 auto;
+            margin: 50px;
+        }
+        .foot-items{
+            background-color: #fdd8ad;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
 @media screen and (max-width:576px) {
+
     .nav-bar,
-     .manu, 
-     .teams {
+    .manu,
+    .teams,
+    .fet {
         flex-direction: column;
     }
-    .con, .facts-con
-    {
+
+    .con,
+    .facts-con,
+    .spon-img {
         grid-template-columns: repeat(1, 1fr);
     }
-    .facts-con{
+
+    .facts-con,
+    .spon-img {
         justify-items: center;
         gap: 24px;
     }
-    .futer{
+
+    .futer {
         margin-left: 20px;
     }
+
+    .fet-img {
+        width: 90%;
+    }
+
+    #badge {
+
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
 }
